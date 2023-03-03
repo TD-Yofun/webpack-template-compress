@@ -1,0 +1,42 @@
+{
+  "name": "vue-compress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "npx only-allow yarn",
+    "start": "webpack-dev-server --config ./scripts/webpack.dev.js",
+    "build": "webpack --config ./scripts/webpack.prd.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@webpack-cli/serve": "^2.0.1",
+    "babel-loader": "8.0.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "6.0.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.6.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.6",
+    "webpack": "4",
+    "webpack-cli": "3",
+    "webpack-dev-server": "3",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "vue": "2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "not ie <= 8"
+  ]
+}
