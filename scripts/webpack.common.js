@@ -13,10 +13,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: {
-          loader: "url-loader",
+          loader: "file-loader",
           options: {
-            limit: 8192,
-            name: "images/[name].[ext]?[hash]",
+            esModule: false,
+            name: "images/[name].[hash:8].[ext]",
           },
         },
       },
