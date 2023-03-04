@@ -33,7 +33,9 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "vue": "2"
+    "vue": "2",
+    "vue-router": "3",
+    "vuex": "^4.1.0"
   },
   "browserslist": [
     "> 1%",

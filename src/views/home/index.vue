@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h2 class="hello">Hello world!</h2>
-    <h3>{{ title }}</h3>
-    <img src="./assets/jay.png" alt="" />
+    <h1 class="hello">{{ title }}</h1>
+    <img src="../../assets/jay.png" alt="" />
   </div>
 </template>
 <script>
@@ -13,10 +12,9 @@ export default {
       title: "",
     };
   },
-  mounted() {
-    Promise.resolve("我是标题").then((res) => {
-      this.title = res;
-    });
+  async mounted() {
+    const title = await Promise.resolve("Home");
+    this.title = title;
   },
 };
 </script>
